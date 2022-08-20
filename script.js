@@ -35,7 +35,9 @@ function cashAmountValidator() {
         validations.appendChild(validationMessage)
         validations.style.display = 'block'
     }
-    else if (cash_given_input.value > 0 && cash_given_input.value >= bill_amount_input.value) {
+    else if (cash_given_input.value > 0 && (parseInt(cash_given_input.value) >= parseInt(bill_amount_input.value))) {
+        console.log(typeof(cash_given_input.value));
+        console.log(typeof(bill_amount_input.value))
         console.log('cash_amount_input.value = ' + cash_given_input.value);
         notesNeededCalculator();
     } else {

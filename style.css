@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
-
+:root {
+  --primary-color: #057a55;
+  --dark-gray: grey;
+  --off-white: #f3f4f6;
+}
 body {
   margin: 0;
 }
@@ -10,6 +14,28 @@ main {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   height: 100vh;
+}
+#heading {
+  color: #057a55;
+}
+input {
+  outline: none;
+  padding: 0.3rem;
+  width: 10rem;
+  background: none;
+  border-radius: 0.5rem;
+  border-color: #057a55;
+}
+button{
+  background: none;
+  border: 1px solid;
+  background-color: #057a55;
+  box-shadow: none;
+  border-radius: 0px;
+  color: white;
+  font-family: 'Montserrat';
+  padding:0.3rem;
+  width: 15rem;
 }
 #container {
   padding: 1rem;
@@ -22,7 +48,7 @@ main {
 th,
 td {
   table-layout: fixed;
-  border: 1px solid rgb(139, 138, 138);
+  border: 2px solid var(--primary-color);
   width: 55%;
   border-collapse: collapse;
 }
@@ -38,4 +64,7 @@ td {
 }
 #validations {
   color: red;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
 }

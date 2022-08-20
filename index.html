@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">Cash Register
+        <div id="bill_amount">Bill Amount</div>
+        <input type="text"  id="bill_amount_input" placeholder="Bill Amount">
+        <div id="cash_given">Cash Given</div>
+        <input type="text" id="cash_given_input" placeholder="Cash Given">
+        <div id="validations">
+
+        </div>
+      </div>
+      <button id="get_number_of_notes">Get Number of Notes</button>
+      <table class="table">
+        <caption>Change to return</caption>
+        <tr>
+        <th>Value of notes</th>
+        <td class="notes">2000</td>
+        <td class="notes">500</td>
+        <td class="notes">100</td>
+        <td class="notes">50</td>
+        <td class="notes">10</td>
+        <td class="notes">1</td>
+      </tr>
+        <tr>
+        <th>Quantity</th>
+        <td class="quantities"></td>
+        <td class="quantities"></td>
+        <td class="quantities"></td>
+        <td class="quantities"></td>
+        <td class="quantities"></td>
+        <td class="quantities"></td>
+      </tr>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
